@@ -1,0 +1,29 @@
+@font-face{
+    font-family: Omori;
+    src: url(./font/Omori-fonts/OMORI_GAME2.ttf);
+}
+
+body{
+    font-family: Omori;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+}
+.botao{
+        width: 10vwpx;
+        height: 10vh;
+        padding: 0.2vw;
+        background-color: black;
+        color: white;
+        border: solid white 0.1vw;
+        box-shadow: 0px 0px 0px 0.1vw black;
+        font-size: 1rem;
+        font-family: Omori;
+}
