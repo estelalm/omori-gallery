@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 @font-face{
     font-family: Omori;
     src: url(./font/Omori-fonts/OMORI_GAME2.ttf);
@@ -12,16 +18,111 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.line{
-    position: absolute;
-    background-color: blueviolet;
-    opacity: .2;
+    background-color: black;
+    color: white;
+    padding: 1vw;
+    border:solid  white 4px;
+    box-shadow: 0 0.4vh black;
+    top: -1vh;
+    position: relative;
 }
 
 main{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vw;
 }
+
+.album{
+    background-color: cornsilk;
+    padding: 3vw;;
+    height: 70vh;
+    width: 60vw;
+    border: solid 4px black;
+    box-shadow: inset 0 0 1vw rgba(37, 29, 1, 0.233);
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+}
+.page1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    height: 100%;
+    width: 100%;
+}
+.line{
+    height: 73vh;
+    width: 0.2vw;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    left: 50%;
+    top: 16%;
+    box-shadow: 0vw 0vw 2vw 2vw rgba(0, 0, 0, 0.349);
+    filter: blur(0.2vw);
+}
+
+.album section{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    place-content: center;
+    place-items: center;
+}
+
+.album .img{
+    width: 9vw;
+    height: 24vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img p{
+    position: relative;
+    top: 11vw;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+    padding: 1vw;
+    height: 100%;
+}
+
+.img:hover > p{
+    transform: translatey(-12vw);
+    transition: 0.3s;
+    transition-delay: 0.1s ;
+}
+
+.page1 .page-right .um{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+.page1 .page-right .dois{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+.page1 .page-right .tres{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+.page1 .page-right .quatro{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+.page1 .page-left .um{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+.page1 .page-left .dois{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+.page1 .page-left .tres{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+.page1 .page-left .quatro{
+    background-image: url("https://static.wikia.nocookie.net/omori/images/3/3c/DW_ALBUM_09.png");
+}
+
+
 
 main a{
     height: 4vh;
@@ -34,13 +135,14 @@ main a{
     font-family: Omori;
     text-align: center;
     text-decoration: none;
-
 }
+
 
 
 footer{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .botao{
         width: 10vw;
@@ -54,4 +156,7 @@ footer{
         font-family: Omori;
         text-align: center;
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
