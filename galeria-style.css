@@ -5,25 +5,53 @@
 
 body{
     font-family: Omori;
+    background-image: url(./img/galeria_img/album-bg.webp);
+    background-size: cover;
 }
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.line{
+    position: absolute;
+    background-color: blueviolet;
+    opacity: .2;
+}
+
+main{
+    display: flex;
+}
+
+main a{
+    height: 4vh;
+    padding: 0.2vw;
+    background-color: black;
+    color: white;
+    border: solid white 0.1vw;
+    box-shadow: 0px 0px 0px 0.1vw black;
+    font-size: 2rem;
+    font-family: Omori;
+    text-align: center;
+    text-decoration: none;
+
+}
 
 
 footer{
     display: flex;
+    justify-content: center;
 }
 .botao{
-        width: 10vwpx;
-        height: 10vh;
+        width: 10vw;
+        height: 4vh;
         padding: 0.2vw;
         background-color: black;
         color: white;
         border: solid white 0.1vw;
         box-shadow: 0px 0px 0px 0.1vw black;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-family: Omori;
+        text-align: center;
+        text-decoration: none;
 }
