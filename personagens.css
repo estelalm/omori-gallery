@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+@font-face{
+    font-family: Omori;
+    src: url(./font/Omori-fonts/OMORI_GAME2.ttf);
+}
+
 a{
     text-decoration: none;
 }
@@ -11,17 +16,23 @@ a{
 ul, ol, li{
     list-style: none;
 }
-body{
-    overflow-y: hidden;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-}
 
-.background{
-    z-index: -1;
+body{
+    background-image: url(./img/characters_img/headspace_bg.webp);
     max-width: 100%;
     max-height: 100%;
+    background-size: cover;
+}
+
+.title{
+    font-family: Omori;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1vw;
+    border:solid  white 4px;
+    box-shadow: 0 0.4vh black;
+    top: -1vh;
 }
